@@ -22,6 +22,7 @@ body#RPassword
 	box-sizing: border-box;
 	padding: 70px 30px;
 	border-radius: 05%;
+	opacity: 0.8;
 }
 
 #logoRC

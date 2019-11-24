@@ -1,3 +1,4 @@
+/*DISEÑO DEL MENU INTERACTIVO*/
 *
 {
 	margin: 0;
@@ -13,31 +14,33 @@ nav
 {
 	margin: 20px auto;
 	width: 90%;
-	max-width: 3000px
+	max-width: 3000px;
 }
-
+/*Eliminar estilo de la lista de categorias del menu*/
 nav ul
 {
 	list-style: none;
 
 }
-
+/*Diseño para Todos los elementos ul dentro del nav*/
 nav > ul
 {
 	display: table;
 	overflow: hidden;
 	width: 100%;
 	background: black;
+	opacity: 0.8;
 	position: relative;
 	color: white;
+	border-radius: 05px;
 }
-
+/*Mismo tamaño para la lista dentro de los ul*/
 nav > ul li
 {
 	display: table-cell;
 }
 
-
+/*Agregar transicion a los iconos del menu*/
 nav > ul li a
 {
 	color: white;
@@ -54,6 +57,7 @@ nav > ul li a
 	transition: all .4s ease;
 }
 
+/*elementos span de las etiquetas a*/
 nav > ul > li >a span
 {
 	background: #174459;
@@ -72,10 +76,10 @@ nav > ul > li >a span
 
 }
 
-nav > ul > li > a span i .icon
+.icon-home
 {
-	display: block;
-	line-height: 60px;
+	/**/
+	color: red;
 	
 
 	
@@ -90,22 +94,87 @@ nav > ul > li > a:hover > span
 
 nav ul li a span.uno
 {
-	background: url(../img/incio.jpg) center top;
+	background: url(../img/inicio.jpg) center top; 
+	line-height: 60px;
+	
 }
 
 nav ul li a span.dos
 {
 	background: url(../img/nosotros.jpg) center top;
+	line-height: 60px;
 }
 nav ul li a span.tres
 {
 	background: url(../img/productos.jpg)  center top;
+	line-height: 60px;
 }
 nav ul li a span.cuatro
 {
 	background: url(../img/servicios.jpg)  center top;
+	line-height: 60px;
 }
 nav ul li a span.cinco
 {
 	background: url(../img/contacto.jpg) center top;
+	line-height: 60px;
+}
+/*Diseño del fondo de inicio*/
+
+body
+{
+	margin: 0:
+	padding:0;
+	background: url(../img/fondoinicio.jpg) no-repeat center top;
+	background-size: cover;
+	font-family: sans-serif;
+	height: 100vh;
+}
+/*Estilo de los parrafos*/
+.contexto
+{
+	width: 1000px;
+max-width: 1100px;
+background: white;
+opacity: 0.45;
+position: absolute;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 05px;
+
+}
+
+.contexto2
+{
+	width: 1000px;
+max-width: 1100px;
+background: white;
+opacity: 0.45;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 05px;
+}
+
+.contexto3
+{
+	width: 1000px;
+max-width: 1100px;
+background: white;
+opacity: 0.45;
+position: absolute;
+top: 75%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 05px;
+}
+
+/*Estilo del contenido del parrafo*/
+#parrafo
+{
+font-size: 18px;
+font-family: sans-serif;
+color: black;
 }
